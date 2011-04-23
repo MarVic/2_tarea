@@ -2,17 +2,19 @@ package cl.utfsm.inf.lp;
 import java.util.*;
 import cl.utfsm.inf.lp.Ente;
 
+
 class claseEnte implements Ente {
-//FALTA HACER EL CONSTRUCTOR PARA INICAILIZAR EL TABLERO Ennn 0;
+ 
 	private static int tamTablero;
-	private static int[][] tablero = 
-				 new int[tamTablero][tamTablero];
+	private static int[][][] tablero = 
+				 new int[tamTablero][tamTablero][2];
 
 	private	int idTipo;
 	private int rut;
 	private String nombreTipo; 
 	private int[] cord = new int[2];
-	
+
+
 	public void setTipo(int tipo){
 		idTipo = tipo;
 		switch (tipo){
@@ -56,17 +58,21 @@ class claseEnte implements Ente {
 	public boolean setPosicion(int x, int y){
 		if ( (x < tamTablero) && (x >= 0 ) &&
 				(y < tamTablero) && (y >= 0 )){ 
-			cord[0] = x;
-			cord[1] = y;		
-			return true;
-		}
-		else 
-			return false;
+				cord[0] = x;
+				cord[1] = y;		
+				return true;
+			}
+			else
+				return false;
+		
 	}
+	
 
 	public int[] getPosicion(){
 		return cord;
 	}
+
+
 
 }		
 
