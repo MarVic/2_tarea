@@ -3,7 +3,7 @@ import java.util.*;
 import cl.utfsm.inf.lp.Ente;
 
 class claseEnte implements Ente {
-//FALTA HACER EL CONSTRUCTOR PARA INICAILIZAR EL TABLERO Ennnnn 0;
+//FALTA HACER EL CONSTRUCTOR PARA INICAILIZAR EL TABLERO Ennn 0;
 	private static int tamTablero;
 	private static int[][] tablero = 
 				 new int[tamTablero][tamTablero];
