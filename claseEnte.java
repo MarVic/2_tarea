@@ -9,7 +9,7 @@ class claseEnte implements Ente {
 	private static int[][][] tablero = 
 				 new int[tamTablero][tamTablero][2];
 
-	protected int idTipo;
+	protected int idTipo;//
 	private int rut;
 	private String nombreTipo; 
 	private int[] cord = new int[2];
