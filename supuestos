@@ -1,0 +1,13 @@
+->el unico limitante para que un  personaje
+no se pueda mover es que a la pocicion que se
+desea mover (casillero) este ocupada.
+
+->la entrada de datos se asume que vien sin
+ erores.
+
+->si un objeto se puede tomar solo una ves
+(si contenido no es infinito).
+
+-> el efecto elixir dura solo un turno de tiempo,
+es decir si tome elixir y no me puede mover
+al siguiente turno me muevo normalmente.

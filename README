@@ -1,0 +1,6 @@
+se ha  modificado la interfas Personaje.
+espesificamente en el metoo beber
+
+					era public void bebe (Objeto Pocion)
+					quedo :
+					public void beber(Ente pocion)  
