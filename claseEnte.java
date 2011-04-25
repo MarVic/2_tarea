@@ -5,14 +5,21 @@ import cl.utfsm.inf.lp.Ente;
 
 class claseEnte implements Ente {
  
-	private static int tamTablero;
-	private static int[][][] tablero = 
-				 new int[tamTablero][tamTablero][2];
+	static int tamTablero;
+	protected static Ente[][][] tablero = 
+				 new Ente[tamTablero][tamTablero][2];
 
 	protected int idTipo;//
 	private int rut;
 	private String nombreTipo; 
-	private int[] cord = new int[2];
+	protected int[] cord = new int[2];
+	
+	public void tableroInit(){
+		for(int k = 0; k < 2; k++)
+			for(int i = 0; i < tamTablero; i++ )
+				for(int j = 0; j < tamTablero; j++)
+						tablero[i][j][k] = null;
+  	}
 
 
 	public void setTipo(int tipo){
@@ -36,8 +43,6 @@ class claseEnte implements Ente {
 		}
 
 	}
-
-	
 
 	public int getTipo(){
 		return idTipo;
