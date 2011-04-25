@@ -3,11 +3,11 @@ import java.util.*;
 import  cl.utfsm.inf.lp.Personaje;
 import cl.utfsm.inf.lp.claseEnte;
 
-class clasePersonaje extends claseEnte implements Personaje {
+public class clasePersonaje extends claseEnte implements Personaje {
 	private boolean vivo;
 	private boolean tomo_elixir;
 
-	clasePersonaje(){
+	public clasePersonaje(){
 		vivo = true;
 		tomo_elixir = false;
 	}

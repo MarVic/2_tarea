@@ -3,9 +3,9 @@ import java.util.*;
 import cl.utfsm.inf.lp.Ente;
 
 
-class claseEnte implements Ente {
+public class claseEnte implements Ente {
  
-	static int tamTablero;
+	protected static int tamTablero;
 	protected static Ente[][][] tablero = 
 				 new Ente[tamTablero][tamTablero][2];
 
@@ -14,7 +14,8 @@ class claseEnte implements Ente {
 	private String nombreTipo; 
 	protected int[] cord = new int[2];
 	
-	public void tableroInit(){
+	static public void tableroInit(int tam){
+		tamTablero = tam;
 		for(int k = 0; k < 2; k++)
 			for(int i = 0; i < tamTablero; i++ )
 				for(int j = 0; j < tamTablero; j++)

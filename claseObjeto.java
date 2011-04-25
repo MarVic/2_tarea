@@ -3,7 +3,7 @@ import cl.utfsm.inf.lp.Objeto;
 import cl.utfsm.inf.lp.claseEnte;
 import java.util.*;
 
-class claseObjeto extends claseEnte implements Objeto {
+public class claseObjeto extends claseEnte implements Objeto {
 	private boolean tomado;
 		
 	claseObjeto(){
