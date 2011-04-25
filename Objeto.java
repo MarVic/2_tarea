@@ -8,5 +8,7 @@ public interface Objeto extends Ente {
         public void setEfecto(boolean tipo);
 	        /* Devuelve el efecto al tomar la poción */
         public boolean tomar();
+		
+			public boolean fueTomado();
 }
 
