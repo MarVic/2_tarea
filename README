@@ -1,6 +1,40 @@
-se ha  modificado la interfas Personaje.
-espesificamente en el metoo beber
 
-					era public void bebe (Objeto Pocion)
-					quedo :
-					public void beber(Ente pocion)  
+	Integrantes:
+					Marcelo Muñoz Araya
+						Rol 2404083-6.
+					Victor Reyes Rodrigez 
+						Rol 2504097-k. 
+		
+
+	--->Solucion:
+
+	Tal vez lo unico que se deba mensionar con respecto a la solucion empleada fue como se implemento la dinamica.
+	Lo que se hiso fue crear un clase que implementara la interfaz ente  >> claseEnte <<, a esta clase se le agregaro un  miembros estatico
+	para controlar el comportamiento global de la poblacion (las piezas y pociones ): una matriz tridimencional
+	tablero[ tamTablero ][ tamTablero ][ 2 ] para posicionar tanto personajes (en la primera capa tablero[][][0]) y 
+	objetos (en la segunda capa tablero[][][1]), posterior mente la clase heredada >> clasePersonaje << que implemeta la interfaz Personaje 
+	tambien se le agregaron miembros estaticos para controlar particular mente la poblacion de personas (numero de muertos y numero de piesas 
+	que se encuentran en posiciones finale --piesas que no se podran mover jamas). adicional mente se agrwgaro metodos y miembros para maneja 
+	sus estado (si esta  vivo o, no si tomo un elixir etc...).
+
+	Observacion: Esta implementacion Obligo a modificar minimametne la interfas Personaje 
+
+			espesificamente en el metoo beber
+
+			era public void bebe (Objeto Pocion)
+			quedo :
+			public void beber(Ente pocion)  
+
+			no consideramos que esta modificacion sea grave: las razones son que un Objeto es
+			tambien un Ente... los codigos dependientes (llendose en la vola!!...)de esta interfas solo deben agregar esta
+			modificacion y un cast al principio del metodo que implemeta esto.
+
+			>>>>>>>Pensamos que se gana vastantecon este cambio<<<<<<<<<<<<<<<<<<<<<<<<<<<<.
+
+
+	Compilacion	:  solo escrivir make en la terminal
+
+
+
+
+

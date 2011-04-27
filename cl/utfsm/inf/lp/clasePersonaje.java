@@ -91,12 +91,12 @@ public class clasePersonaje extends claseEnte implements Personaje {
 			switch (idTipo){
 				case 2://caballo
 					if(tomo_elixir){
-						sig_x = act_x + 4;
+						sig_y = act_y + 4;
 						tomo_elixir = false;
 					}	
 					else
-						 sig_x = act_x + 3;
-					sig_y = act_y + 1;
+						 sig_y = act_y + 3;
+					sig_x = act_x + 1;
 					if(setPosicion(sig_x, sig_y)){
 						tablero[act_x][act_y][0] = null;
 					}else
@@ -105,12 +105,12 @@ public class clasePersonaje extends claseEnte implements Personaje {
 
 				case 3: //alfil
 					if(tomo_elixir){
-						sig_x = act_x + 2;
+						sig_y = act_y + 2;
 						tomo_elixir = false;
 					}	
 					else
-						 sig_x = act_x + 1;
-					sig_y = act_y + 1;
+						 sig_y = act_y + 1;
+					sig_x = act_x + 1;
 					if(setPosicion(sig_x, sig_y)){
 						tablero[act_x][act_y][0] = null;
 					}else
@@ -119,12 +119,12 @@ public class clasePersonaje extends claseEnte implements Personaje {
 				
 				case 4://peon				
 					if(tomo_elixir){
-						sig_x = act_x + 2;
+						sig_y = act_y + 2;
 						tomo_elixir = false;
 					}	
 					else
-						 sig_x = act_x + 1;
-					sig_y = act_y ;
+						 sig_y = act_y + 1;
+					sig_x = act_x ;
 					if(setPosicion(sig_x, sig_y)){
 						tablero[act_x][act_y][0] = null;
 					}else

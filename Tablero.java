@@ -8,7 +8,7 @@ import java.io.*;
 import java.util.*;
 
 
-class juego {
+class Tablero {
 	public static void main (String[] args) {
 			
 			Scanner sc = new Scanner(System.in);
@@ -58,6 +58,7 @@ class juego {
 				int [] cord_p = personajes[i].getPosicion();
 				System.out.println( personajes[i].getNombreTipo()+" id : "+personajes[i].getId()+ "  Posicion : " + cord_p[0] + " " + cord_p[1] );
 			}
+			System.out.println("Objetos");
 			for(int i = 0; i < cantObj; i++){
 				int[] cord_o = objetos[i].getPosicion(); 
 				System.out.println(objetos[i].getNombreTipo()+" id : "+objetos[i].getId() + " Posicion : "+ cord_o[0]+ " " +cord_o[1]);
@@ -82,9 +83,33 @@ class juego {
 						System.out.println(objetos[i].getNombreTipo()+" id : "+objetos[i].getId() + " Posicion : Tomada");
 					else
 						System.out.println(objetos[i].getNombreTipo()+" id : "+objetos[i].getId() + " Posicion : "+ cord_o[0]+ " " +cord_o[1]);
-			}
+				}
 
-		}	
+		}
+/*		for(int j = 0; j<1; j++) {
+				System.out.println("Tiempo : " +  tiempo);
+
+				System.out.println("Personajes");
+				for(int i = 0; i < cantPers; i++){
+					int [] cord_p = personajes[i].getPosicion();
+					if(personajes[i].signosVitales())
+						System.out.println( personajes[i].getNombreTipo()+" id : "+personajes[i].getId()+ "  Posicion : " + cord_p[0] + " " + cord_p[1] );
+					else
+						System.out.println( personajes[i].getNombreTipo()+" id : "+personajes[i].getId()+ "  Posicion :  Muerto");
+				}
+				System.out.println("Objetos");
+				for(int i = 0; i < cantObj; i++){
+					int[] cord_o = objetos[i].getPosicion(); 
+					if(objetos[i].fueTomado())
+						System.out.println(objetos[i].getNombreTipo()+" id : "+objetos[i].getId() + " Posicion : Tomada");
+					else
+						System.out.println(objetos[i].getNombreTipo()+" id : "+objetos[i].getId() + " Posicion : "+ cord_o[0]+ " " +cord_o[1]);
+				}
+
+
+		}*/
+
+	
 
 	}
 
